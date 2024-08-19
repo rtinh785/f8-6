@@ -90,23 +90,173 @@
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
-         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap"
+         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap"
          rel="stylesheet"
       />
-      <!-- href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap" -->
 
       <!-- CSS -->
       <link rel="stylesheet" href="./asset/css/grid.css" />
       <link rel="stylesheet" href="./asset/css/styles.css" />
+      <link rel="stylesheet" href="./asset/css/reponsive.css" />
    </head>
-   <body>
-      <p>
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolore
-         possimus porro perspiciatis, vel numquam veniam accusantium ex
-         dignissimos iusto voluptatibus in pariatur, maxime illum voluptatum
-         velit incidunt quam delectus culpa sint cum explicabo enim, est
-         corporis. Vitae repellendus beatae accusamus? Quod asperiores repellat
-         ad non. Libero omnis hic aperiam!
-      </p>
+   <body style="height: 999999px">
+      <!-- PC-Header  -->
+      <header class="header">
+         <div class="container">
+            <div class="header-inner">
+               <!-- Header-left -->
+               <label
+                  for="toggle"
+                  class="header__toggle-menu header__email-icon"
+               >
+                  <img
+                     src="./asset/icon/header-toggle-menu.svg"
+                     alt="toggle"
+                     class="header__icon"
+                  />
+               </label>
+
+               <a href="#!" class="header__left">
+                  <div class="header__email-icon">
+                     <img
+                        src="./asset/icon/header-letter.svg"
+                        alt="hi@arif.interactive"
+                        class="header__icon"
+                     />
+                  </div>
+                  <p class="header__email">hi@arif.interactive</p>
+               </a>
+
+               <!-- Logo -->
+               <a href="#!" class="header__logo">
+                  <img src="./asset/icon/logo.svg" alt="Logo" class="logo" />
+               </a>
+               <!-- Navbar -->
+               <nav class="header__nav">
+                  <ul class="nav-list">
+                     <li class="nav-item">
+                        <a href="#!">Projects</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#!">Journey</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#!">Service</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#!">Contact</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <!-- Tablet&Mobile Header -->
+      <header class="mobile-header">
+         <!-- checkbox -->
+         <input
+            type="checkbox"
+            name="toggle"
+            id="toggle"
+            class="mobile-header__checkbox"
+            hidden
+         />
+         <!-- overplay -->
+         <label for="toggle" class="menu-overplay"></label>
+         <!-- menu -->
+         <div class="mobile-header__menu-drawer">
+            <div href="#!" class="header__left">
+               <div class="header__email-icon">
+                  <img
+                     src="./asset/icon/header-letter.svg"
+                     alt="hi@arif.interactive"
+                     class="header__icon"
+                  />
+               </div>
+               <p class="mobile-header__email">hi@arif.interactive</p>
+            </div>
+
+            <nav class="mobile-header__nav">
+               <ul class="nav-list">
+                  <li class="nav-item">
+                     <a href="#!">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#!">Journey</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#!">Service</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#!">Contact</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <!-- Hero -->
+      <section class="hero">
+         <div class="container">
+            <div class="hero-inner row ">
+               <!-- col-1 -->
+               <div class="col-lg-5  col-md-12">
+                  <figure class="hero__thumbel">
+                     <img
+                        src="./asset/img/hero-img.png"
+                        alt=""
+                        class="hero__img"
+                     />
+                  </figure>
+               </div>
+
+               <!-- col-2 -->
+               <div class="col-lg-5 col-md-12 offset-lg-2 ">
+                  <section class="hero__content">
+                     <h1 class="hero__heading">An Interactive Designer</h1>
+                     <p class="hero__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                     </p>
+                     <div class="hero__action">
+                        <a class="hero__btn btn"> Book a Call </a>
+                        <p class="my-works">My Works</p>
+                     </div>
+                     <div class="hero__media">
+                        <p class="hero__my-media">Follow me on:</p>
+
+                        <div class="hero__media-list">
+                           <div class="hero__media-wrap">
+                              <img
+                                 src="./asset/icon/hero-media-icon-Be.svg"
+                                 alt="Be"
+                                 class="hero__icon"
+                              />
+                           </div>
+
+                           <div class="hero__media-wrap">
+                              <img
+                                 src="./asset/icon/hero-media-icon-ball.svg"
+                                 alt="ball"
+                                 class="hero__icon"
+                              />
+                           </div>
+
+                           <div class="hero__media-wrap">
+                              <img
+                                 src="./asset/icon/hero-media-icon-ins.svg"
+                                 alt="ins"
+                                 class="hero__icon"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </section>
+
+<!-- 
+      <img src="./asset/img/hero-decor-big.png" alt="" class="taaa"> -->
    </body>
 </html>
